@@ -39,13 +39,13 @@ void main(void) {
         buttons_current = joypad();
 
         if((buttons_current & J_UP) && !(buttons_previous & J_UP)) {
-        apply_y_force(0xFF00);
+            apply_y_force(0xFF00);
         }else if((buttons_current & J_DOWN) && !(buttons_previous & J_DOWN)) {
-        apply_y_force(0x0100);
+            apply_y_force(0x0100);
         }else if((buttons_current & J_LEFT) && !(buttons_previous & J_LEFT)) {
-        apply_x_force(0xFF00);
+            apply_x_force(0xFF00);
         }else if((buttons_current & J_RIGHT) && !(buttons_previous & J_RIGHT)) {
-        apply_x_force(0x0100);
+            apply_x_force(0x0100);
         }
 
         update_ball();

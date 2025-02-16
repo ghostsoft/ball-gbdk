@@ -59,7 +59,6 @@ void update_ball(void) {
     divided_velocity.x.w = mul_q88_asm(ball_vel.x.w, TIMESTEPDIV);
     divided_velocity.y.w = mul_q88_asm(ball_vel.y.w, TIMESTEPDIV);
 
-    //uint8_t counter = TIMESTEP;
     for (uint8_t c = TIMESTEP; c != 0; c--) {
         desired_pos.x.w = ball_pos.x.w + divided_velocity.x.w;
         desired_pos.y.w = ball_pos.y.w + divided_velocity.y.w;
