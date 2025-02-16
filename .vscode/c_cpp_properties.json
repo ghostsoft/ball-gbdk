@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "GameBoy",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:/gamedev/gameboy/gbdk/include/**"
+            ],
+            "defines": [
+                "__PORT_sm83",
+                "__TARGET_gb"
+            ],
+            "cStandard": "c11",
+            //"compilerArgs": ["-D__banked -D__naked"],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true
+            }
+            //"intelliSenseMode": "msvc-x64"
+        }
+    ],
+    "version": 4
+}
